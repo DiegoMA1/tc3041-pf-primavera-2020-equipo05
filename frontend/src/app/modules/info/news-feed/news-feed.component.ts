@@ -30,7 +30,7 @@ export class NewsFeedComponent implements OnInit {
   }
 
   postFeed() {
-    const post = {idUser: 1, message: this.message};
+    const post = {idUser: this.userService.getUser(), message: this.message};
     this.newsFeedService.postFeed(post).subscribe(data => {
       alert('Post creado');
       this.router.navigateByUrl('/home');
