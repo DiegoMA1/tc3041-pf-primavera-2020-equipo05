@@ -4,7 +4,7 @@ import {Product} from '../interfaces/product';
 import { HttpClient, HttpHeaders, HttpErrorResponse} from '@angular/common/http';
 import { map, catchError, tap} from 'rxjs/operators';
 import { Observable } from 'rxjs';
-const endpoint = 'http://35.192.86.122:8080/api/';
+const endpoint = 'http://104.154.210.48:8080/api/';
 
 
 @Injectable({
